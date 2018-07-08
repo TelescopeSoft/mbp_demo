@@ -21,10 +21,6 @@
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
     <link rel="stylesheet" href="dist/css/mbp.css">
-    <!-- Select2 -->
-    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
-    <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +56,7 @@
                 <ul class="nav navbar-nav">
                     <li ><a href="Index.html">重大项目</a></li>
                     <li><a href="Guide.html">批准服务</a></li>
-                    <li class="active"><a href="ApproveResult.html">批准结果</a></li>
+                    <li><a href="ApproveResult.html">批准结果</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">招标投标<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -86,7 +82,7 @@
                     <li><a href="#">重大设计变更</a></li>
                     <li><a href="#">施工信息</a></li>
                     <li><a href="#">质量安全监督</a></li>
-                    <li><a href="AdminPenalty.html">行政处罚</a></li>
+                    <li class="active"><a href="AdminPenalty.html">行政处罚</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -103,127 +99,60 @@
       <section class="content-header">
         <ol class="breadcrumb">
           <li><a href="Index.html"><i class="fa fa-dashboard"></i>首页</a></li>
-          <li >批准结果</li>
-            <li class="active">办理结果公示</li>
+          <li class="active">行政处罚</li>
         </ol>
       </section>
 
         <!-- Main content -->
         <section class="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <div class="approvetitle">行政处罚公示</div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>行政相对人名称</th>
+                                    <th>项目名称</th>
+                                    <th>处罚决定日期</th>
+                                    <th>处罚机关</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=da13cea64ba3471ca15418c57f909163&type=2">滨湖区吉缘食品商行</a></td>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=da13cea64ba3471ca15418c57f909163&type=2">违反税收管理</a> </td>
+                                    <td>2018-06-29</td>
+                                    <td>无锡市国家税务局第二税务分局</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=3f06d1b29ae9448fa270aab9c66212b3&type=2">江苏金凯利物业管理有限公司</a></td>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=3f06d1b29ae9448fa270aab9c66212b3&type=2">江苏金凯利物业管理有限公司-发票违法</a> </td>
+                                    <td>2018-06-29</td>
+                                    <td>无锡市国家税务局第二税务分局</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=52a022b62ae04e8bb1edb66f02492654&type=2">江阴市华士建筑安装工程有限公司</a></td>
+                                    <td><a href="http://wuxicredit.wuxi.gov.cn/xysgs/xysgsnr/index.shtml?id=52a022b62ae04e8bb1edb66f02492654&type=2">安装单位未按照建筑起重机械安装、拆卸工程专项施工方案及安全操作规程组织安装、拆卸作业</a> </td>
+                                    <td>2018-06-28</td>
+                                    <td>无锡市滨湖区住房和城乡建设局</td>
+                                </tr>
 
-            <div class="box box-info">
-                <div class="box-header">
-                    <!--<h3 class="box-title">项目基本信息</h3>-->
-                    <div class="approvetitle">项目基本信息</div>
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
                 </div>
-
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table class="table table-bordered">
-                        <tr>
-                            <td  class="bg-info">项目代码</td>
-                            <td>2018-320211-40-03-512499</td>
-                            <td class="bg-info">项目名称</td>
-                            <td  >无锡信捷电气股份有限公司年产20万台运动型PLC、高端伺服驱动器建设项目</td>
-                        </tr>
-
-                    </table>
-                </div>
-                <!-- /.box-body -->
-
-                <div class="box-header">
-                    <div class="approvetitle">审批事项公示信息</div>
-                </div>
-
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table class="table table-bordered ">
-                        <tr class="bg-info">
-                            <td>审批部门</td>
-                            <td>审批事项</td>
-                            <td>审批结果</td>
-                            <td>审批时间</td>
-                            <td>审批文号</td>
-                        </tr>
-
-                        <tr>
-                            <td>无锡滨湖区发改局</td>
-                            <td>企业投资建设固定资产投资项目备案</td>
-                            <td>通过</td>
-                            <td>2018-03-20</td>
-                            <td>滨湖发改备【2018】27号</td>
-                        </tr>
-
-                    </table>
-                </div>
-
-                <div class="box-header">
-                    <div class="approvetitle">相关办理结果</div>
-                </div>
-
-                <!-- /.box-header -->
-                <div class="box-body">
-                    <table class="table table-bordered ">
-                        <tr class="bg-info">
-                            <td>审批部门</td>
-                            <td>审批事项</td>
-                            <td>审批结果</td>
-                            <td>审批时间</td>
-                            <td>审批文号</td>
-                        </tr>
-
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>在文物保护单位建设控制地带内建设工程设计方案审核</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>文物保护工程方案审批</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>变更经文物主管部门批准的文物保护工程方案中的重要内容的审批</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>建设工程对县级文物保护单位实施原址保护的保护措施的批准	</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>尚未核定公布为文物保护单位的不可移动文物需要迁移异地保护的批准</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>无锡滨湖区文体局</td>
-                            <td>在文物保护单位的保护范围内进行其他建设工程或者爆破、钻探、挖掘等作业审核</td>
-                            <td></td>
-                            <td>2018-06-11</td>
-                            <td></td>
-                        </tr>
-
-                    </table>
-                </div>
-
+                <!-- /.col -->
             </div>
-
-            <div class="text-center">
-                <button type="button" class="btn btn-primary" onclick="history.go(-1)">返回</button>
-            </div>
-
+            <!-- /.row -->
         </section>
         <!-- /.content -->
 
@@ -257,25 +186,13 @@
 <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
-<!-- Select2 -->
-<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<!-- bootstrap datepicker -->
-<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
 <script>
     $(function () {
-        $('#datepickerstart').datepicker({
-            autoclose: true,"format":"yyyy-mm-dd","language":"zh-CN"
-        });
-        $('#datepickerend').datepicker({
-            autoclose: true,"format":"yyyy-mm-dd","language":"zh-CN"
-        })
-
-        $('#approveTable').DataTable({
+        $('#example1').DataTable({
             'paging'      : true,
             'lengthChange': false,
             'searching'   : false,
