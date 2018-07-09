@@ -57,8 +57,18 @@
                     <li class="active"><a href="Index.html">重大项目</a></li>
                     <li><a href="Guide.html">批准服务</a></li>
                     <li><a href="ApproveResult.html">批准结果</a></li>
-                    <li><a href="Tender.html">招标投标</a></li>
-
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">招标投标<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">资格预审公告</a></li>
+                            <li><a href="#">招标公告</a></li>
+                            <li><a href="#">中标候选人公示</a></li>
+                            <li><a href="#">中标结果公示</a></li>
+                            <li><a href="#">中标候选人公示</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">合同备案</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">土地征收<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -101,81 +111,37 @@
       <section class="content-header">
         <ol class="breadcrumb">
           <li><a href="Index.html"><i class="fa fa-dashboard"></i>首页</a></li>
-          <li class="active">重大项目</li>
+          <li class="active">质量安全监督</li>
         </ol>
       </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <div class="approvetitle">项目列表</div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <table id="example1" class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>项目名称</th>
-                                    <th>立项文号</th>
-                                    <th>项目编码</th>
-                                    <th>建设单位</th>
-                                    <!--<th>施工图审查数</th>
-                                    <th>招投标数</th>
-                                    <th>合同备案数</th>
-                                    <th>安全报监数</th>
-                                    <th>质量报监数</th>
-                                    <th>施工许可数</th>
-                                    <th>竣工备案数</th>-->
-                                    <!--<th>项目地址</th>-->
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><a href="ProjectDetail.html">无锡信捷电气股份有限公司年产20万台运动型PLC、高端伺服驱动器建设项目</a> </td>
-                                    <td>滨湖发改备[2018]27号</td>
-                                    <td><a href="ProjectDetail.html">3202111806150102</a></td>
-                                    <td>无锡信捷电气股份有限公司</td>
-                                    <!--<td>0</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>-->
-                                    <!--<td>无锡市经济开发区北区刘塘路与丁香路交叉口西北侧</td>-->
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><a href="ProjectDetail.html">无锡市恒欣金属制品有限公司扩建厂房项目</a> </td>
-                                    <td> 锡滨发改备[2017]3号</td>
-                                    <td><a href="ProjectDetail.html">3202111709040101</a></td>
-                                    <td>无锡市恒欣金属制品有限公司</td>
-                                    <!--<td>2</td>
-                                    <td>0</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>0</td>-->
-                                    <!--<td>无锡市滨湖区工业安置区陆藕路41号</td>-->
-                                </tr>
-
-                                </tbody>
-
-                            </table>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
+            <div class="box box-info">
+                <div class="box-header">
+                    <div class="approvetitle">质量安全监督信息</div>
                 </div>
-                <!-- /.col -->
-            </div>
-            <!-- /.row -->
+
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td  class="bg-info" width="15%">质量监督机构</td>
+                            <td width="35%">无锡市建设工程质量监督站</td>
+                            <td class="bg-info" width="15%">联系电话</td>
+                            <td  width="35%"></td>
+                        </tr>
+                        <tr>
+                            <td  class="bg-info">安全监督机构</td>
+                            <td>无锡市滨湖区建筑工程安全监督站</td>
+                            <td class="bg-info">联系电话</td>
+                            <td  ></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+                </div>
         </section>
         <!-- /.content -->
 
@@ -215,38 +181,7 @@
 <script src="dist/js/demo.js"></script>
 <script>
     $(function () {
-        $('#example1').DataTable({
-            'paging'      : true,
-            'lengthChange': false,
-            'searching'   : false,
-            'ordering'    : true,
-            'info'        : true,
-            'autoWidth'   : false,
-            'language': {
-                "sProcessing": "处理中...",
-                "sLengthMenu": "显示 _MENU_ 项结果",
-                "sZeroRecords": "没有匹配结果",
-                "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
-                "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
-                "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
-                "sInfoPostFix": "",
-                "sSearch": "搜索:",
-                "sUrl": "",
-                "sEmptyTable": "表中数据为空",
-                "sLoadingRecords": "载入中...",
-                "sInfoThousands": ",",
-                "oPaginate": {
-                    "sFirst": "首页",
-                    "sPrevious": "上页",
-                    "sNext": "下页",
-                    "sLast": "末页"
-                },
-                "oAria": {
-                    "sSortAscending": ": 以升序排列此列",
-                    "sSortDescending": ": 以降序排列此列"
-                }
-            }
-        });
+
 
     })
 </script>

@@ -112,11 +112,11 @@
                         <div class="nav-tabs-custom">
                             <ul class="nav nav-tabs">
                                 <li class="active"><a href="#basic" data-toggle="tab">基本信息</a></li>
-                                <li><a href="#approve" data-toggle="tab">批准信息</a></li>
+                                <li><a href="#approve" data-toggle="tab">批准结果</a></li>
                                 <li><a href="#tender" data-toggle="tab">招标投标</a></li>
                                 <li><a href="#contract" data-toggle="tab">合同备案</a></li>
-                                <li><a href="#construction" data-toggle="tab">施工相关</a></li>
-                                <li><a href="#safetysupervision" data-toggle="tab">质量安全监督</a></li>
+                                <li><a href="#construction" data-toggle="tab">施工信息</a></li>
+                                <!--<li><a href="#safetysupervision" data-toggle="tab">质量安全监督</a></li>-->
                                 <li><a href="#complete" data-toggle="tab">竣工</a></li>
                             </ul>
                             <div class="tab-content">
@@ -308,15 +308,225 @@
                                 </div>
                                 <!-- /.tab-pane -->
                                 <div class="tab-pane" id="construction">
+                                    <div class="box-header">
+                                        <div class="approvetitle">相关单位人员</div>
+                                    </div>
 
+                                    <div class="box-body">
+                                        <table class="table table-bordered ">
+                                            <tr class="bg-info">
+                                                <td>单位类别</td>
+                                                <td>单位名称</td>
+                                                <td>岗位</td>
+                                                <td>姓名</td>
+                                                <td>资质证书编号</td>
+                                                <td>资质类型和等级</td>
+                                                <td>资格类型及证号</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>建设单位</td>
+                                                <td>无锡市恒欣金属制品有限公司</td>
+                                                <td>法定代表人</td>
+                                                <td>章一星</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>建设单位</td>
+                                                <td>无锡市恒欣金属制品有限公司</td>
+                                                <td>项目负责人</td>
+                                                <td>章一星</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>建设单位</td>
+                                                <td>无锡市恒欣金属制品有限公司</td>
+                                                <td>现场负责人</td>
+                                                <td>章一星</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>法人或委托负责人</td>
+                                                <td>吴亚建</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏建安A(2004)0000508</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>质检员</td>
+                                                <td>杨律峰</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>201202051000407</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>企业技术负责人</td>
+                                                <td>傅效新</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏建安A(2010)0007095</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>项目技术负责人</td>
+                                                <td>吴仲康</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏100200968	</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>项目经理</td>
+                                                <td>吴亚建</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏建安B(2006)0201706</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>安全员</td>
+                                                <td>闵忠平</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏建安C(2006)0201498</td>
+                                            </tr>
+                                            <tr>
+                                                <td>施工单位</td>
+                                                <td>无锡金洪涛建筑工程有限公司</td>
+                                                <td>企业分管安全负责人	</td>
+                                                <td>谢锡芳</td>
+                                                <td>D232058283</td>
+                                                <td>二级</td>
+                                                <td>苏建安A(2012)0003579</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>设计单位</td>
+                                                <td>无锡轻工设计研究院有限公司</td>
+                                                <td>项目负责人</td>
+                                                <td>徐国志</td>
+                                                <td>A132012762-6/2</td>
+                                                <td>建筑工程甲级</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>设计单位</td>
+                                                <td>无锡轻工设计研究院有限公司</td>
+                                                <td>法定代表人</td>
+                                                <td>陈杨</td>
+                                                <td>A132012762-6/2</td>
+                                                <td>建筑工程甲级</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>设计单位</td>
+                                                <td>无锡轻工设计研究院有限公司</td>
+                                                <td>现场负责人</td>
+                                                <td>徐国志</td>
+                                                <td>A132012762-6/2</td>
+                                                <td>建筑工程甲级</td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="box-header">
+                                        <div class="approvetitle">环境及地下设施交底项目</div>
+                                    </div>
+
+                                    <div class="box-body">
+                                        <table class="table table-bordered ">
+                                            <tr class="bg-info">
+                                                <td>#</td>
+                                                <td>交底项目</td>
+                                                <td>交底情况</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>施工现场的临建设施选址是否合理，结构是否安全，围挡是否按标准设置</td>
+                                                <td>合理</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>施工中各种粉尘、废气、废水、固体废弃物以及噪音、振动对环境的污染和危害</td>
+                                                <td>已采取措施</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>施工现场及毗邻区域内地下管线资料、气象水文观测资料</td>
+                                                <td>已提供</td>
+                                            </tr>
+                                            </table>
+                                        </div>
                                 </div>
                                 <!-- /.tab-pane -->
-                                <div class="tab-pane" id="safetysupervision">
 
-                                </div>
-                                <!-- /.tab-pane -->
                                 <div class="tab-pane" id="complete">
+                                    <div class="box-header">
+                                        <div class="approvetitle">竣工备案信息</div>
+                                    </div>
+                                    <div class="box-body">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td  class="bg-info" width="15%">竣工备案编号</td>
+                                                <td width="35%"></td>
+                                                <td class="bg-info" width="15%">备案项目名称</td>
+                                                <td width="35%" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td  class="bg-info" width="15%">施工许可证编号</td>
+                                                <td width="35%"></td>
+                                                <td class="bg-info" width="15%">质量检测机构名称</td>
+                                                <td width="35%" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td  class="bg-info" width="15%">实际造价（万元）</td>
+                                                <td width="35%"></td>
+                                                <td class="bg-info" width="15%">实际面积（平方米）</td>
+                                                <td width="35%" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td  class="bg-info" width="15%">实际开工日期</td>
+                                                <td width="35%"></td>
+                                                <td class="bg-info" width="15%">实际竣工验收日期</td>
+                                                <td width="35%" ></td>
+                                            </tr>
+                                            <tr>
+                                                <td  class="bg-info" width="15%">结构体系</td>
+                                                <td width="35%" colspan="3"></td>
 
+                                            </tr>
+                                            <tr>
+                                                <td  class="bg-info" width="15%">实际建设规模</td>
+                                                <td width="35%" colspan="3"></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td  class="bg-info" width="15%">竣工决算审计报告</td>
+                                                <td width="35%" colspan="3">
+                                                    <a href="http://binhu.wuxi.gov.cn/doc/2018/06/07/1861158.shtml" target="_blank">无锡市滨湖区审计局对2016年度重点蓝藻打捞点清淤工程项目竣工决算审计结果公告</a>
+                                                </td>
+
+                                            </tr>
+                                            </table>
+                                        </div>
                                 </div>
                                 <!-- /.tab-pane -->
                             </div>
