@@ -98,9 +98,31 @@
                         <div class="box-header">
                             <div class="approvetitle">项目列表</div>
                         </div>
+
+                        <!-- form start -->
+                        <form role="form">
+                            <div class="box-body">
+                                <div class="row form-group">
+                                    <div class="col-xs-3">
+                                        <input type="text" class="form-control" placeholder="项目名称">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder="项目编码">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder="建设单位">
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button type="submit" class="btn btn-primary">查询</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+
+                        </form>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <table id="example1" class="table table-bordered table-striped">
+                            <table id="projectList" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -200,7 +222,7 @@
 <script src="dist/js/demo.js"></script>
 <script>
     $(function () {
-        $('#example1').DataTable({
+        $('#projectList').DataTable({
             'paging'      : true,
             'lengthChange': false,
             'searching'   : false,
