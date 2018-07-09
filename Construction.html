@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
     <link rel="stylesheet" href="dist/css/mbp.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,16 +55,15 @@
                 </button>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="Index.html">重大项目</a></li>
-                    <li><a href="Guide.html">批准服务</a></li>
-                    <li><a href="ApproveResult.html">批准结果</a></li>
+                    <li><a href="Index.html">重大项目</a></li>
+                    <li ><a href="Guide.html">批准服务</a></li>
+                    <li ><a href="ApproveResult.html">批准结果</a></li>
                     <li><a href="Tender.html">招标投标</a></li>
                     <li><a href="LandExpropriation.html">土地征收</a></li>
                     <li><a href="#">重大设计变更</a></li>
-                    <li><a href="Construction.html">施工信息</a></li>
+                    <li class="active"><a href="Construction.html">施工信息</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">质量安全监督<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -72,8 +75,6 @@
                     <li><a href="Complete.html">竣工信息</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-            <!-- Navbar Right Menu -->
 
         </div>
         <!-- /.container-fluid -->
@@ -86,81 +87,113 @@
       <section class="content-header">
         <ol class="breadcrumb">
           <li><a href="Index.html"><i class="fa fa-dashboard"></i>首页</a></li>
-          <li class="active">重大项目</li>
+          <li class="active">施工信息</li>
         </ol>
       </section>
 
         <!-- Main content -->
         <section class="content">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <div class="approvetitle">项目列表</div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <table id="example1" class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>项目名称</th>
-                                    <th>立项文号</th>
-                                    <th>项目编码</th>
-                                    <th>建设单位</th>
-                                    <!--<th>施工图审查数</th>
-                                    <th>招投标数</th>
-                                    <th>合同备案数</th>
-                                    <th>安全报监数</th>
-                                    <th>质量报监数</th>
-                                    <th>施工许可数</th>
-                                    <th>竣工备案数</th>-->
-                                    <!--<th>项目地址</th>-->
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td><a href="ProjectDetail.html">无锡信捷电气股份有限公司年产20万台运动型PLC、高端伺服驱动器建设项目</a> </td>
-                                    <td>滨湖发改备[2018]27号</td>
-                                    <td><a href="ProjectDetail.html">3202111806150102</a></td>
-                                    <td>无锡信捷电气股份有限公司</td>
-                                    <!--<td>0</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>-->
-                                    <!--<td>无锡市经济开发区北区刘塘路与丁香路交叉口西北侧</td>-->
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><a href="ProjectDetail.html">方泉苑六期一批安置房</a> </td>
-                                    <td> 锡滨发改许[2017]9号</td>
-                                    <td><a href="ProjectDetail.html">3202111706060101</a></td>
-                                    <td>无锡山水慧谷城镇建设发展有限公司</td>
-                                    <!--<td>2</td>
-                                    <td>0</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>0</td>-->
-                                    <!--<td>无锡市滨湖区工业安置区陆藕路41号</td>-->
-                                </tr>
 
-                                </tbody>
-
-                            </table>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
+            <div class="box box-info">
+                <div class="box-header with-border">
+                    <div class="approvetitle">施工信息公示</div>
                 </div>
-                <!-- /.col -->
+                <!-- /.box-header -->
+                <!-- form start -->
+                <!--
+                <form role="form">
+                    <div class="box-body">
+                        <div class="row form-group">
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="项目代码">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" placeholder="项目名称">
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" placeholder="审批事项">
+                            </div>
+                            <div class="col-xs-1">
+                                <button type="submit" class="btn btn-primary">查询</button>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" placeholder="审批部门">
+                            </div>
+                            <div class="col-xs-3">
+                                <select class="form-control select2" style="width: 100%;">
+                                    <option selected="selected">全部</option>
+                                    <option>通过</option>
+                                    <option>不通过</option>
+                                    <option>不予受理</option>
+                                    <option>其他</option>
+                                    <option>核报国务院</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right" id="datepickerstart">
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right" id="datepickerend">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>-->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div >
+                            <!-- /.box-header -->
+                            <div class="box-body">
+                                <table id="approveTable" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>项目名称</th>
+                                        <th>项目法人单位及负责人</th>
+                                        <th>勘察单位及其主要负责人</th>
+                                        <th>设计单位及其主要负责人</th>
+                                        <th>施工单位及其主要负责人</th>
+                                        <th>监理单位及其主要负责人</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>方泉苑六期一批安置房</td>
+                                        <td>无锡山水慧谷城镇建设发展有限公司（杜星）</td>
+                                        <td>无锡水文工程地质勘察院（王小敏）</td>
+                                        <td>江苏中设集团股份有限公司（朱炯为）</td>
+                                        <td>无锡市亨利富建设发展有限公司（冯铭伟）</td>
+                                        <td>无锡太湖明珠建设咨询有限公司（朱建荣）</td>
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+
             </div>
-            <!-- /.row -->
+
+
+
         </section>
         <!-- /.content -->
 
@@ -194,13 +227,25 @@
 <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- Select2 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- bootstrap datepicker -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
 <script>
     $(function () {
-        $('#example1').DataTable({
+        $('#datepickerstart').datepicker({
+            autoclose: true,"format":"yyyy-mm-dd","language":"zh-CN"
+        });
+        $('#datepickerend').datepicker({
+            autoclose: true,"format":"yyyy-mm-dd","language":"zh-CN"
+        })
+
+        $('#approveTable').DataTable({
             'paging'      : true,
             'lengthChange': false,
             'searching'   : false,

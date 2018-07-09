@@ -21,3 +21,6 @@
 .approvetitle{
     font-size:20px;border-bottom-style:solid;border-bottom-width:1px
 }
+.approvetitle>span {
+    font-size:16px;
+}
